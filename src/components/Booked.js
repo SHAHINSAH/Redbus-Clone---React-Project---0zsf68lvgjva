@@ -8,7 +8,7 @@ export const Booked = () => {
   const seat = localStorage.getItem("seatNum");
   return (
     <div className="booking">
-      {/* <Loader visible={true} /> */}
+      <Loader visible={true} />
       <div className="seatNo">
         <h2>Total Number of seats: {seat}</h2>
       </div>

@@ -15,7 +15,7 @@ export default function Source(props) {
         onChange={handleChange}
         value={props.message}
         placeholder="Enter Source"
-        // defaultValue={"kolkata"}
+      
       />
     </div>
   );

@@ -27,7 +27,7 @@ export default function SearchBus({
     await fetch(url1)
       .then((response) => response.json())
       .then((data) => setData(data));
-
+      
     await fetch(url2)
       .then((response) => response.json())
       .then((data) => {
