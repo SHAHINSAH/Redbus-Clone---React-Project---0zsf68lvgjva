@@ -15,8 +15,11 @@ export default function Destination(props) {
         onChange={handleChange}
         value={props.toMessage}
         placeholder="Enter Destination"
-        
       />
+      {/* <select>
+        <option>pune</option>
+        <option>mumbai</option>
+      </select> */}
     </div>
   );
 }

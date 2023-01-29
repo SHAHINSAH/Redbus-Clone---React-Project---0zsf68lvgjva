@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import BookTmsg from "./BookTmsg";
 
 export const BusCard = ({ show }) => {
   const navigate = useNavigate();
@@ -24,6 +25,7 @@ export const BusCard = ({ show }) => {
     localStorage.setItem("SeatArr", JSON.stringify(seatArr));
   };
   const handleBook = (e) => {
+    
     if (seatArr.length !== 0) {
       let cal = seatArr.length * localStorage.getItem("ticketPrice");
       localStorage.setItem("TotalPrice", cal);
@@ -35,6 +37,7 @@ export const BusCard = ({ show }) => {
       setTimeout(() => {
         document.querySelector(".msg").style.display = "none";
       }, 2000);
+      // e.preventDefault();
     }
   };
   return (

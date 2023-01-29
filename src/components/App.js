@@ -9,8 +9,12 @@ import Nav from "./Nav";
 import { Image } from "./Image";
 import { BusDetails } from "./BusDetails";
 import { BusCard } from "./BusCard";
-import { Booked } from "./Booked";
+import  Booked  from "./Booked";
 import { Routes, Route } from "react-router-dom";
+import About from "./About";
+// import Form from "./Form";
+
+
 
 const App = () => {
   const [message, setMessage] = useState("");
@@ -23,8 +27,12 @@ const App = () => {
 
   return (
     <div id="main">
+    {/* //   <div className="container mt-3">
+    //   <Modell />
+    // </div> */}
+    {/* <Form /> */}
       <Nav />
-
+      
       <div id="main-duplicate">
         <Source message={message} setMessage={setMessage} />
         <Swap
@@ -36,8 +44,9 @@ const App = () => {
         <Destination toMessage={toMessage} setToMessage={setToMessage} />
         <Date select={select} setSelect={setSelect} />
         <SearchBus
-          from={message}
-          to={toMessage}
+          from={message.toLowerCase()}
+         
+          to={toMessage.toLowerCase()}
           date={select}
           data={data}
           data2={data2}
@@ -46,6 +55,7 @@ const App = () => {
           setData2={setData2}
           setFilter={setFilter}
         />
+       
       </div>
       <Routes>
         <Route path="/" element={<Image />} />
@@ -61,7 +71,8 @@ const App = () => {
           }
         />
         <Route path="BusDetails/BusCard" element={<BusCard show={show} />} />
-        <Route path="BusDetails/BusCard/Booked" element={<Booked />} />
+        <Route path="BusDetails/BusCard/Booked" element={<Booked show={show} />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

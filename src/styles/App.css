@@ -480,3 +480,25 @@
     font-weight: 700;
     cursor: pointer;
 }
+.aboutuss{
+    display: flex;
+    text-align: center;
+    color: fff;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+    color: #d54f5f;
+
+
+
+    
+}
+.aboutdiv{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 1000px; */
+    background-color: rgb(213, 206, 206);
+    
+}

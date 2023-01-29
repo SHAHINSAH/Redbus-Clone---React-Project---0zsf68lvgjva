@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-export const Booked = () => {
+const Booked = () => {
   const nav = useNavigate();
   const from = localStorage.getItem("From");
   const to = localStorage.getItem("To");
@@ -8,7 +8,7 @@ export const Booked = () => {
   const seat = localStorage.getItem("seatNum");
   return (
     <div className="booking">
-      <Loader visible={true} />
+      {/* <Loader visible={true} /> */}
       <div className="seatNo">
         <h2>Total Number of seats: {seat}</h2>
       </div>
@@ -36,3 +36,4 @@ export const Booked = () => {
     </div>
   );
 };
+export default Booked;
