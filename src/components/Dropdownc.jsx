@@ -10,7 +10,6 @@ const DropdownList=()=>{
     <option>jaipur</option>
     <option>pune</option>
     <option>mumbai</option>
-    <option>bangalore</option>
  </select>
         </div>
         <div>
