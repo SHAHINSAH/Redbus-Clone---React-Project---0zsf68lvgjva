@@ -8,7 +8,7 @@ export const Date = (props) => {
   };
   return (
     <div id="traveling-date">
-      <label htmlFor="date">Date</label>
+      <label id="date-lebel" htmlFor="date">Date</label>
       <br />
       <input
         type="date"

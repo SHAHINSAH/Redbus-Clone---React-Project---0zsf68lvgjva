@@ -12,7 +12,8 @@ import { BusCard } from "./BusCard";
 import  Booked  from "./Booked";
 import { Routes, Route } from "react-router-dom";
 import About from "./About";
-// import Form from "./Form";
+import Login from "./Login";
+import Sign from "./Sign";
 
 
 
@@ -73,6 +74,8 @@ const App = () => {
         <Route path="BusDetails/BusCard" element={<BusCard show={show} />} />
         <Route path="BusDetails/BusCard/Booked" element={<Booked show={show} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signIn" element={<Sign/>} />
       </Routes>
     </div>
   );

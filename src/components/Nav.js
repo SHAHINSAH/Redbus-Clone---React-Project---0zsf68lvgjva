@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/App.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const nav1 = useNavigate();
@@ -16,6 +17,9 @@ export default function Nav() {
         <a href="#">Contact us</a>
         {/* <a href="#">log </a> */}
         
+      </div>
+      <div>
+      <Link to="/login"><button type="button">Login</button></Link>
       </div>
     </div>
   );

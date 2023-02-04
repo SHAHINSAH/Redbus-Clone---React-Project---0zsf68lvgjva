@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 #main-duplicate {
@@ -9,11 +10,15 @@
     width: 70%;
     margin: 100px auto;
     /* margin-top: 100px; */
+    width: 86%;
+    height: 450px;
     margin-bottom: 0;
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    background: url(https://st.redbus.in/Images/INDOFFER/FESTIVE200/Hero01.png);
 }
+
 
 
 /* Navbar */
@@ -22,48 +27,57 @@
     background-color: #d54f5f;
     height: 70px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding:.5rem 2rem;
+    align-items: center;
 }
-
-#navbar-left {
-    padding-right: 700px;
-}
-
-#navbar-left img {
-    width: 150px;
-    padding-left: 70px;
-    padding-top: 12px;
-    color: white;
-    font-weight: 600;
-}
-
-#navbar-right {
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#navbar-right a {
-    padding-right: 100px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
+#navbar-right a{
+    margin: 0 1.5rem;
+    color: #ffff;
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    font-size: 1.5rem;
+    font-weight: 400;
+
 }
+#navbar-right a:hover{
+    color:#1da1f2;
+    border-bottom: 1px solid #1da1f2;
+    
+}
+#nav-bar button{
+    width: 100px;
+    height:40px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #1da1f2;
+    color: #ffff;
+    border:none;
+    outline: none;
+     border-radius: 10%;
+  }
+
+  
 
 
 /* Source */
 
 #from {
     padding: 20px;
+    margin-top: 140px;
 }
+/* #from-lebel{
+    margin-top: ;
+} */
 
 #from label {
     font-size: 600;
     padding-bottom: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #from input {
@@ -84,6 +98,7 @@
     background-color: #d54f5f;
     color: white;
     cursor: pointer;
+    margin-top: 220px;
 }
 
 #icons {
@@ -95,11 +110,19 @@
 
 #to {
     padding: 20px;
+    margin-top: 140px;
 }
 
 #to label {
     font-size: 600;
     padding-bottom: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #to input {
@@ -107,12 +130,35 @@
     outline: none;
     padding: 18px;
 }
+/* Dropdown------------------ */
+.dropdown-content{
+    display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 
 /* Date Selection */
 
 #traveling-date {
     padding: 18px;
+    margin-top: 140px;
+    background: transparent;
+}
+#date-lebel {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #traveling-date label {
@@ -133,10 +179,12 @@
     padding: 20px;
     border: none;
     outline: none;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     background-color: #d54f5f;
     color: white;
     cursor: pointer;
+    margin-top: 210px;
+    font-size: 1.1rem;
 }
 
 
@@ -155,7 +203,7 @@
 
 /* details */
 
-#details {
+/* #details {
     display: flex;
     justify-content: space-evenly;
     background-color: #d54f5f;
@@ -165,12 +213,12 @@
 #heading {
     text-align: center;
     margin-top: 180px;
-}
+} */
 
-#heading h1 {
+/* #heading h1 {
     color: white;
     font-size: 100px;
-}
+} */
 
 #png {
     color: white;
@@ -218,11 +266,25 @@
     justify-content: space-evenly;
 }
 
-#schedule {
-    background-color: #d54f5f;
+ .sort-btn{
+    /* background-color: #d54f5f;
     height: 70%;
     padding: 7px;
+    color: white; */
+    padding: 20px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 90px;
+    padding: 7px;
+    /* text-align: center; */
+    /* margin-top: 35px; */
+    /* background-color: #d54f5f; */
+    background-color: #d54f5f;
     color: white;
+    cursor: pointer;
+    
+
 }
 
 #bus-list {
@@ -480,25 +542,136 @@
     font-weight: 700;
     cursor: pointer;
 }
-.aboutuss{
-    display: flex;
-    text-align: center;
-    color: fff;
-    margin-top: 3rem;
-    margin-left: 1.2rem;
-    font-size: 2rem;
-    color: #d54f5f;
 
+/* -----Login------------------------ */
 
+.data-container{
+    width: 400px;;
+   height: 500px;;
+   position: absolute;
+   top:15%;
+   bottom: 15%;
+   left:35%;
 
-    
+   background-image: linear-gradient(#a82837,#a82856 );
+   
+   /* opacity: 0.6; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border-radius: 15px;
 }
-.aboutdiv{
-    /* display: flex;
+.login-up-form{
+    width:330px;
+    height: 430px;
+    background-color: white;
+    padding:10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.login-up-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.input-box{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.input-box:active{
+    border:1px solid green;
+}
+.login-btn{
+    width: 60%;
+    background-color:  #d54f5f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-btn:hover{
+    background-color:  #be1e31;
+  }
+  /* ----------------------Footer--------------------------- */
+
+  #heading{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #d54f5f;
+    margin-bottom: 1.5rem;
+    /* height: 200px; */
+    /* align-items: center; */
+  
+  }
+  
+    .rdc-links  {
+      display: block;
+      color: #000;
+      cursor: pointer;
+      margin-bottom: 32px;
+      font-weight: 400;
+      /* padding: 1rem 2rem; */
+  }
+  .rdc-links  {
+    display: block;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 32px;
+    font-weight: 400;
+  }
+  .rdc-links  {
+    display: block;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 32px;
+    font-weight: 400;
+  }
+  #social-media{
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+    justify-items: center;
+    /* margin-top: 1rem; */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #details {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    background-color: #d54f5f;
+    width: 70%;
+    margin: 100px auto;
+    padding: 20px;
+  
+    /* height: 500px; */
+  }
+  /* .both-image{
+    display: flex;
+    justify-content: space-around;
+  } */
+  #footer-text{
+    display: flex;
+    /* text-align: center; */
     justify-content: center;
     align-items: center;
-    height: 350px;
-    width: 1000px; */
-    background-color: rgb(213, 206, 206);
+    font-size: 1.5rem;
     
-}
+  }
+
+  
