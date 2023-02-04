@@ -2,6 +2,7 @@
 import React from "react";
 import "../styles/App.css";
 export default function Details() {
+  
   return (
     <div id="details">
       <div id="social-media">Follows to  social media for more info about Redbus........   </div>
@@ -12,7 +13,7 @@ export default function Details() {
          <div><a rel="nofollow" class="soc-links" target="_blank" href="https://twitter.com/redBus_sg"><img class="social-logo" src="https://st.redbus.in/Images/rdc/Group%2078.svg"/></a></div>
           
       </div>
-      <div id="footer-text">2021 ibibogroup All rights reserved</div>
+      <div id="footer-text"> 2023 ibibogroup All rights reserved</div>
       <div id="png">
       </div>
     </div>

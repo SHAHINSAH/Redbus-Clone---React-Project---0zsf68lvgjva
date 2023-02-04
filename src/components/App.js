@@ -14,6 +14,8 @@ import { Routes, Route } from "react-router-dom";
 import About from "./About";
 import Login from "./Login";
 import Sign from "./Sign";
+import Contact from "./Contact";
+
 
 
 
@@ -76,6 +78,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signIn" element={<Sign/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   );

@@ -40,8 +40,8 @@
 
 }
 #navbar-right a:hover{
-    color:#1da1f2;
-    border-bottom: 1px solid #1da1f2;
+    color:#8abcdb;
+    border-bottom: 1px solid #6e8a9b;
     
 }
 #nav-bar button{
@@ -49,7 +49,7 @@
     height:40px;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #1da1f2;
+    background-color: red;
     color: #ffff;
     border:none;
     outline: none;
@@ -149,7 +149,7 @@
 
 #traveling-date {
     padding: 18px;
-    margin-top: 140px;
+    margin-top: 170px;
     background: transparent;
 }
 #date-lebel {
@@ -201,24 +201,6 @@
 }
 
 
-/* details */
-
-/* #details {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #d54f5f;
-    height: 500px;
-}
-
-#heading {
-    text-align: center;
-    margin-top: 180px;
-} */
-
-/* #heading h1 {
-    color: white;
-    font-size: 100px;
-} */
 
 #png {
     color: white;
@@ -553,7 +535,7 @@
    bottom: 15%;
    left:35%;
 
-   background-image: linear-gradient(#a82837,#a82856 );
+   background-image: linear-gradient(#a82837,#d54f5f );
    
    /* opacity: 0.6; */
    display: flex;
@@ -567,7 +549,7 @@
     height: 430px;
     background-color: white;
     padding:10px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -614,8 +596,7 @@
     justify-content:space-evenly;
     background-color: #d54f5f;
     margin-bottom: 1.5rem;
-    /* height: 200px; */
-    /* align-items: center; */
+   
   
   }
   
@@ -643,28 +624,21 @@
   }
   #social-media{
     display: flex;
-    /* text-align: center; */
-    /* align-items: center; */
+  
     justify-content: center;
     justify-items: center;
-    /* margin-top: 1rem; */
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   #details {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
+   
     background-color: #d54f5f;
     width: 70%;
     margin: 100px auto;
     padding: 20px;
-  
-    /* height: 500px; */
+
   }
-  /* .both-image{
-    display: flex;
-    justify-content: space-around;
-  } */
+
   #footer-text{
     display: flex;
     /* text-align: center; */
@@ -673,5 +647,32 @@
     font-size: 1.5rem;
     
   }
+  /* -----------------------------------------------About---------------------------- */
+  .aboutuss{
+    display: flex;
+    text-align: center;
+    color: fff;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+    color: #d54f5f;
+
+}
+
+/* --------------------------------------------------------Contact---------------------------- */
+
+.contactt{
+    width: 800px; 
+    display: flex;
+    text-align: center;
+    color: fff;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    font-size: 2rem;
+    color: #d54f5f; 
+}
+.contactdiv{
+    margin-left: 400px;
+}
 
   

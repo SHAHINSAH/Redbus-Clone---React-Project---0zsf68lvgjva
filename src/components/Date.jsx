@@ -8,11 +8,12 @@ export const Date = (props) => {
   };
   return (
     <div id="traveling-date">
-      <label id="date-lebel" htmlFor="date">Date</label>
+      <label id="date-lebel" htmlFor="date"></label>
       <br />
       <input
         type="date"
         id="date"
+        
         // onSelect={handleSelect}
         onClick={handleSelect}
         // value={props.select}
